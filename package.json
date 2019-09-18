@@ -1,0 +1,19 @@
+{
+  "name": "promalpufa",
+  "version": "1.0.0",
+  "description": "promalpufa project",
+  "main": ".app/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Maria Shamonova",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  },
+  "dependencies": {
+    "save-dev": "^2.0.0"
+  }
+}
