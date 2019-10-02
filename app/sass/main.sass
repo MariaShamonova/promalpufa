@@ -1,4 +1,33 @@
-body 
-	background-color: pink
+@import "header.sass"
+@import "hamburgers/hamburgers.scss"
 
-	
+body
+	width: 100%
+	margin: 0px
+
+
+.selector-for-some-widget 
+	box-sizing: content-box
+
+
+.hamburger
+	position: relative
+	top: 20px
+	.hamburger-box
+		width: 0px
+		right: -20px
+		.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before
+			border-radius: 0
+			//color: white
+			width: 28px
+			height: 3px
+			background-color: white
+
+.hamburger.hamburger--collapse
+	display: block
+	position: relative
+	height: 50px
+	width: 100px
+	left: 70px
+
+

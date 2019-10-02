@@ -4,7 +4,7 @@ var gulp = require('gulp'),
 
 gulp.task('sass', async function(){
     return gulp.src('app/sass/**/*.sass') // Берем все sass файлы из папки sass и дочерних, если таковые будут
-        .pipe(sass())
+        .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('app/css'))
         .pipe(browserSync.reload({stream: true}))
 });
@@ -32,7 +32,8 @@ gulp.task('code', async function() {
     .pipe(browserSync.reload({ stream: true }))
 });
 
-gulp.task('watch', function() {
+
+gulp.task('watch', async function() {
     gulp.watch('app/sass/**/*.sass', gulp.parallel('sass')); // Наблюдение за sass файлами
     gulp.watch('app/*.html', gulp.parallel('code')); // Наблюдение за HTML файлами в корне проекта
     gulp.watch(['app/js/common.js', 'app/libs/**/*.js'], gulp.parallel('scripts')); // Наблюдение за главным JS файлом и за библиотеками

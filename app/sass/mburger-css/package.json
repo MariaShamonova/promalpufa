@@ -1,0 +1,67 @@
+{
+  "_from": "mburger-css",
+  "_id": "mburger-css@1.3.3",
+  "_inBundle": false,
+  "_integrity": "sha512-Dfu/45Hl8XbHW87NWhefbGCu6asPPbpA2KXki3Ah3fyeiXH/R4km1EiAf/CxmDDd/R3401HSF8FcWr3hWKgBhg==",
+  "_location": "/mburger-css",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "mburger-css",
+    "name": "mburger-css",
+    "escapedName": "mburger-css",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/mburger-css/-/mburger-css-1.3.3.tgz",
+  "_shasum": "9b5ef30baedf7bec37bff41e6d85b6cd0b61435e",
+  "_spec": "mburger-css",
+  "_where": "C:\\Users\\honey\\Desktop\\MyProjects\\promalpufa\\promalpufa",
+  "author": {
+    "name": "Fred Heusschen",
+    "email": "info@mmenujs.com"
+  },
+  "bugs": {
+    "url": "https://github.com/FrDH/mburger-css/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A small collection of CSS animated hamburgers. All set up to work out of the box with the mmenu.js plugin.",
+  "devDependencies": {
+    "fs": "0.0.1-security",
+    "gulp": "^4.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-typescript": "^5.0.1",
+    "typescript": "^3.4.3"
+  },
+  "homepage": "https://github.com/FrDH/mburger-css#readme",
+  "keywords": [
+    "hamburger",
+    "icon",
+    "CSS",
+    "animation",
+    "animated",
+    "menu",
+    "navigation"
+  ],
+  "license": "CC-BY-4.0",
+  "main": "dist/mburger.css",
+  "module": "dist/mburger.js",
+  "name": "mburger-css",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrDH/mburger-css.git"
+  },
+  "scripts": {
+    "build": "gulp default"
+  },
+  "version": "1.3.3"
+}

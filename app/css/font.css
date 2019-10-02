@@ -9,6 +9,18 @@
 }
 
 @font-face{
+	font-family: "Raleway-Thin";
+	src: url("../fonts/Raleway/Raleway-Thin.ttf");
+}
+
+@font-face{
 	font-family: "Philosopher";
 	src: url("../fonts/Philosopher/Philosopher-Regular.ttf");
 }
+
+@font-face{
+	font-family: "Font-Awesome";
+	src: url("C:\Users\honey\Desktop\MyProjects\promalpufa\promalpufa\app\fonts\fontawesome-free-5.11.1-web\webfonts");
+}
+
+
