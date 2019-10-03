@@ -17,13 +17,10 @@ $(function(){
                     }
                 },
             },
-            { navbar: {
-                title: "my custom title"
-            },
-                navbars: [{
-                    position: "top",
-                    content: ["prev", "title"]
-                }]
+            {
+                "navbar": {
+                    title: "My Menu"
+                }
             });
 
             var api = menu.API;

@@ -4,6 +4,7 @@
 body
 	width: 100%
 	margin: 0px
+ 	position: fixed
 
 
 .selector-for-some-widget 
@@ -15,7 +16,7 @@ body
 	top: 20px
 	.hamburger-box
 		width: 0px
-		right: -20px
+		right: -24px
 		.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before
 			border-radius: 0
 			//color: white
@@ -31,3 +32,123 @@ body
 	left: 70px
 
 
+h1, h2
+	text-transform: uppercase
+
+.header-flex
+	display: flex
+	height: 100%
+	position: relative
+	top: 60px
+	
+.flex-center
+	margin: auto
+
+.header-composition
+	text-align: center
+	position: relative
+	.header-rectangle
+		width: 450px
+		height: 120px
+		border: 1px solid white
+		border-bottom: none
+		.h1
+			text-transform: uppercase
+			font-family: Raleway-Thin
+			line-height: 120px
+			font-size: 53px
+
+	.header-rectangle-desc
+		width: 450px
+		height: 40px
+		.header-desc
+			width: 450px
+			margin: auto
+			margin-top: -10px
+			display: flex
+			line-height: 17px	
+			margin 0 10px
+			white-space: nowrap
+			p
+				margin-right: 20px
+				margin-left: 20px
+			&::before, &::after
+				content: ''
+				height: 1.5px
+				width: 100%
+				position: relative
+				background-color: white
+				display: inline-block
+				margin-top: 9px
+	.header-rectangle-write-us
+		width: 450px
+		height: 20px
+		.header-write-us
+			width: 450px
+			height: 20px
+			margin: auto
+			margin-top: 20px
+			display: flex
+			line-height: 17px	
+			margin 0 10px
+			white-space: nowrap
+			text-transform: uppercase
+			p 
+				margin-right: 20px
+				margin-left: 20px
+				font-size: 14px
+				font-family: Raleway-Regular
+			&::before, &::after
+				content: ''
+				height: 1.5px
+				width: 100%
+				position: relative
+				background-color: white
+				display: inline-block
+				margin-top: auto
+				margin-bottom: auto
+
+	.header-call-back
+		width: 450px
+		height: 35px
+		margin-top: 25px
+		display: inline-block
+		font-size: 13px
+		.header-enter-phone
+			float: left
+			width: 45%
+			height: 100%
+			border: 1px solid #787878
+			line-height: 35px
+			color: #5F5F5F
+			background-color: white
+			text-shadow: 0.3px 0.3px 2px gray
+			
+		.button		
+			float: right
+			width: 45%
+			height: 100%
+			border: 1px solid white
+			line-height: 35px
+			background-color: rgba(255, 255, 255, 0.15)
+			a 
+				text-decoration: none
+				color: white
+
+	
+
+p 
+	font-size: 14px
+	margin-top: 40px
+
+
+
+	
+	
+
+
+		
+
+
+
+    	
