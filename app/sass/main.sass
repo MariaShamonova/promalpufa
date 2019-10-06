@@ -1,22 +1,31 @@
 @import "header.sass"
 @import "hamburgers/hamburgers.scss"
+@import "vars.sass"
 
 body
 	width: 100%
 	margin: 0px
  	position: fixed
 
+.ishome
+	.main-head
+		background-color: $dark
 
-.selector-for-some-widget 
-	box-sizing: content-box
+section, header 
+	position: relative
+	background-size: cover
+	background-position: center center
 
+section
+	background-color: #fff
 
 .hamburger
 	position: relative
 	top: 20px
 	.hamburger-box
 		width: 0px
-		right: -24px
+		right: -21px
+		opacity: 0.8
 		.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before
 			border-radius: 0
 			//color: white
@@ -28,7 +37,7 @@ body
 	display: block
 	position: relative
 	height: 50px
-	width: 100px
+	width: 90px
 	left: 70px
 
 
@@ -39,7 +48,7 @@ h1, h2
 	display: flex
 	height: 100%
 	position: relative
-	top: 60px
+	top: -30px
 	
 .flex-center
 	margin: auto

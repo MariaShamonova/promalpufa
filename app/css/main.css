@@ -1,112 +1,97 @@
 .main-head {
   display: inline-block;
   min-height: 710px;
+  height: 100vh;
   width: 100%;
-  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
   position: relative;
   color: white;
   -webkit-background-size: cover; }
-
-.top-line {
-  padding-top: 15px;
-  min-height: 160px;
-  font-family: Raleway-Light; }
-
-.row {
-  line-height: 20px;
-  font-size: 14px; }
-
-.logo img {
-  width: 100px;
-  height: 100px;
-  opacity: 0.7; }
-
-.top-line-right {
-  position: relative;
-  right: 0px; }
-
-.description {
-  margin: auto;
-  margin-left: 0px; }
-
-.logo img {
-  margin-right: 0px;
-  position: relative; }
-
-.top-line-right {
-  margin: auto;
-  margin-right: 0px;
-  text-align: right;
-  left: -55px; }
+  .main-head .top-line {
+    position: absolute;
+    width: 100%;
+    padding-top: 15px;
+    min-height: 100px;
+    font-family: Raleway-Light;
+    z-index: 1; }
+    .main-head .top-line .row {
+      font-size: 14px; }
+      .main-head .top-line .row .top-line-left {
+        display: inline-block; }
+        .main-head .top-line .row .top-line-left .logo {
+          float: left; }
+          .main-head .top-line .row .top-line-left .logo img {
+            margin-right: 0px;
+            position: relative;
+            width: 100px;
+            height: 100px;
+            opacity: 0.7; }
+        .main-head .top-line .row .top-line-left .description {
+          float: right;
+          line-height: 100px;
+          white-space: nowrap; }
+      .main-head .top-line .row .top-line-right {
+        position: relative;
+        right: 0px;
+        margin: auto;
+        margin-right: 0px;
+        text-align: right;
+        left: -55px; }
 
 .top-line-right .number_phone {
   position: relative;
-  font-family: Philosopher-Italic; }
+  font-family: Philosopher-Italic;
+  white-space: nowrap; }
   .top-line-right .number_phone .fas {
     margin-right: 5px;
     font-size: 14px;
     opacity: 0.8; }
 
-.vertical-line {
-  width: 1px;
-  height: 620px;
-  display: flex;
-  background-color: white;
-  right: 0px;
+.header-social {
   position: absolute;
-  right: 77px;
+  width: 60px;
+  height: 100%;
+  display: flex;
+  right: 0px;
   top: 0px;
-  background: rgba(255, 255, 255, 0.17); }
-  .vertical-line .contacts {
+  border-left: rgba(255, 255, 255, 0.17) 1px solid; }
+  .header-social .soc {
     position: relative;
     top: 220px;
-    left: 20px;
     text-align: center;
-    color: rgba(255, 255, 255, 0.8);
+    line-height: 40px;
     width: 50px;
     height: 100px;
-    font-size: 30px; }
-    .vertical-line .contacts .whats-app {
-      position: relative;
-      background: rgba(255, 255, 255, 0.17);
-      border-radius: 50%;
-      width: 45px;
-      height: 45px; }
-    .vertical-line .contacts .instagram {
-      position: relative;
-      top: 10px;
-      background: rgba(255, 255, 255, 0.17);
-      border-radius: 50%; }
-
-.title-rectangle {
-  position: relative;
-  top: 70px;
-  left: 320px;
-  width: 100%; }
-
-.main-title {
-  position: absolute;
-  top: 25px;
-  left: 70px;
-  width: 100%;
-  font-family: Raleway-Thin; }
-
-.main-title span {
-  color: #fff;
-  font-size: 50px;
-  line-height: 55px;
-  padding: 10px; }
-
-.text-underline-main-title {
-  margin-top: -25px;
-  margin-left: 60px;
-  width: 100%;
-  font-family: Raleway-Light;
-  font-size: 13px;
-  text-align: center;
-  padding: 10px; }
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto; }
+    .header-social .soc ul {
+      width: 40px;
+      height: 100px; }
+    .header-social .soc ul, .header-social .soc li {
+      list-style-type: none;
+      margin: 0px;
+      padding: 0px; }
+      .header-social .soc ul a, .header-social .soc li a {
+        display: block;
+        color: rgba(255, 255, 255, 0.6);
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        transition: background-color .25s ease;
+        cursor: pointer;
+        z-index: 1; }
+        .header-social .soc ul a:hover, .header-social .soc li a:hover {
+          background-color: rgba(255, 255, 255, 0.1); }
+      .header-social .soc ul .instagram, .header-social .soc li .instagram {
+        position: relative;
+        line-height: 45px;
+        background: rgba(0, 0, 0, 0.17); }
+      .header-social .soc ul .whats-app, .header-social .soc li .whats-app {
+        position: relative;
+        top: 20px;
+        line-height: 45px;
+        background: rgba(0, 0, 0, 0.17); }
 
 /*!
  * Hamburgers
@@ -820,15 +805,24 @@ body {
   margin: 0px;
     margin-position: fixed; }
 
-.selector-for-some-widget {
-  box-sizing: content-box; }
+.ishome .main-head {
+  background-color: #1a1a1a; }
+
+section, header {
+  position: relative;
+  background-size: cover;
+  background-position: center center; }
+
+section {
+  background-color: #fff; }
 
 .hamburger {
   position: relative;
   top: 20px; }
   .hamburger .hamburger-box {
     width: 0px;
-    right: -24px; }
+    right: -21px;
+    opacity: 0.8; }
     .hamburger .hamburger-box .hamburger-inner, .hamburger .hamburger-box .hamburger-inner::after, .hamburger .hamburger-box .hamburger-inner::before {
       border-radius: 0;
       width: 28px;
@@ -839,7 +833,7 @@ body {
   display: block;
   position: relative;
   height: 50px;
-  width: 100px;
+  width: 90px;
   left: 70px; }
 
 h1, h2 {
@@ -849,7 +843,7 @@ h1, h2 {
   display: flex;
   height: 100%;
   position: relative;
-  top: 60px; }
+  top: -30px; }
 
 .flex-center {
   margin: auto; }
