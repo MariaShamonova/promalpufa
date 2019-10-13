@@ -20,7 +20,7 @@ section
 	background-color: #fff
 
 .hamburger
-	position: relative
+	position: absolute
 	top: 20px
 	.hamburger-box
 		width: 0px
@@ -34,11 +34,13 @@ section
 			background-color: white
 
 .hamburger.hamburger--collapse
-	display: block
-	position: relative
+	display: flex
+	position: absolute
+	right: 20px
+	top: 35px
 	height: 50px
-	width: 90px
-	left: 70px
+	width: 60px
+	//left: 70px
 
 
 h1, h2
@@ -46,103 +48,107 @@ h1, h2
 
 .header-flex
 	display: flex
-	height: 100%
+	height: 250px
 	position: relative
-	top: -30px
-	
-.flex-center
-	margin: auto
+	top: 200px
+	.flex-center
+		margin: auto
+		.header-composition
+			text-align: center
+			position: relative
+			.header-rectangle
+				width: 450px
+				height: 120px
+				border: 1px solid white
+				border-bottom: none
+				.h1
+					text-transform: uppercase
+					font-family: Raleway-Thin
+					line-height: 120px
+					font-size: 53px
 
-.header-composition
-	text-align: center
-	position: relative
-	.header-rectangle
-		width: 450px
-		height: 120px
-		border: 1px solid white
-		border-bottom: none
-		.h1
-			text-transform: uppercase
-			font-family: Raleway-Thin
-			line-height: 120px
-			font-size: 53px
+			.header-rectangle-desc
+				width: 450px
+				height: 40px
+				.header-desc
+					width: 450px
+					margin: auto
+					margin-top: -10px
+					display: flex
+					line-height: 17px	
+					margin 0 10px
+					white-space: nowrap
+					p
+						margin-right: 20px
+						margin-left: 20px
+					&::before, &::after
+						content: ''
+						height: 1.5px
+						width: 100%
+						position: relative
+						background-color: white
+						display: inline-block
+						margin-top: 9px
+			.header-rectangle-write-us
+				width: 450px
+				height: 20px
+				.header-write-us
+					width: 450px
+					height: 20px
+					margin: auto
+					margin-top: 20px
+					display: flex
+					line-height: 17px	
+					margin 0 10px
+					white-space: nowrap
+					text-transform: uppercase
+					p 
+						margin-right: 20px
+						margin-left: 20px
+						font-size: 14px
+						font-family: Raleway-Regular
+					&::before, &::after
+						content: ''
+						height: 1.5px
+						width: 100%
+						position: relative
+						background-color: white
+						display: inline-block
+						margin-top: auto
+						margin-bottom: auto
 
-	.header-rectangle-desc
-		width: 450px
-		height: 40px
-		.header-desc
-			width: 450px
-			margin: auto
-			margin-top: -10px
-			display: flex
-			line-height: 17px	
-			margin 0 10px
-			white-space: nowrap
-			p
-				margin-right: 20px
-				margin-left: 20px
-			&::before, &::after
-				content: ''
-				height: 1.5px
+			.header-call-back-box
+				display: block
+				margin-top: 30px
 				width: 100%
-				position: relative
-				background-color: white
-				display: inline-block
-				margin-top: 9px
-	.header-rectangle-write-us
-		width: 450px
-		height: 20px
-		.header-write-us
-			width: 450px
-			height: 20px
-			margin: auto
-			margin-top: 20px
-			display: flex
-			line-height: 17px	
-			margin 0 10px
-			white-space: nowrap
-			text-transform: uppercase
-			p 
-				margin-right: 20px
-				margin-left: 20px
-				font-size: 14px
-				font-family: Raleway-Regular
-			&::before, &::after
-				content: ''
-				height: 1.5px
-				width: 100%
-				position: relative
-				background-color: white
-				display: inline-block
-				margin-top: auto
-				margin-bottom: auto
+				height: 35px
+				.header-call-back 
+					width: 450px
+					height: 35px
+					display: inline-flex
+					justify-content: space-between
+					margin: auto
+					font-size: 13px
+					.header-enter-phone
+						width: 45%
+						height: 100%
+						border: 1px solid #787878
+						line-height: 33px
+						color: #5F5F5F
+						background-color: white
+						text-shadow: 0.3px 0.3px 2px gray
+						
+					.button			
+						width: 45%
+						height: 100%
+						border: 1px solid white
+						line-height: 33px
+						background-color: rgba(255, 255, 255, 0.15)
+						a 
+							text-decoration: none
+							color: white
 
-	.header-call-back
-		width: 450px
-		height: 35px
-		margin-top: 25px
-		display: inline-block
-		font-size: 13px
-		.header-enter-phone
-			float: left
-			width: 45%
-			height: 100%
-			border: 1px solid #787878
-			line-height: 35px
-			color: #5F5F5F
-			background-color: white
-			text-shadow: 0.3px 0.3px 2px gray
-			
-		.button		
-			float: right
-			width: 45%
-			height: 100%
-			border: 1px solid white
-			line-height: 35px
-			background-color: rgba(255, 255, 255, 0.15)
-			a 
-				text-decoration: none
-				color: white
+
 
 	
 
@@ -150,7 +156,387 @@ p
 	font-size: 14px
 	margin-top: 40px
 
+.header-garant
+	position: relative
+	top: 280px
+	height: 50px	
+	width: 100%
+	display: flex
 
+	.section-th
+		width: 100%
+		height: 50px
+		text-align: center	
+		.cardos	
+			position: relative
+			width: 800px	
+			height: 50px
+			justify-content: space-around
+			display: inline-flex		
+			.cardo 
+				width:	210px	
+				display: inline-block
+				font-family: Raleway-Light
+				i 
+					float: left
+					line-height: 45px
+					font-size: 20px
+					opacity: 0.8
+
+
+.arrow
+	position: absolute
+	bottom: 30px
+	width: 100%	
+	text-align: center
+	font-size: 30px
+	color: rgba(#fff, .8)
+	&:hover
+		color: rgba(#fff, .8)
+		opacity: 0.8 
+
+
+.section-service
+	width: 100%
+	height: 360px
+
+	.service-title-box
+		text-align: center
+		position: relative
+		margin-top: 50px
+		font-family: Raleway-Light
+		.service-title
+			a
+				color: #404040
+				text-decoration: none
+				&:hover
+					opacity: 0.7
+					transition: 0.25s 
+
+			
+.service-flex	
+	display: flex
+	width: 100%
+	height: 250px
+	position: relative
+	margin-top: 30px
+	.flex-container
+		display: flex
+		width: 65%
+		height: 200px
+		margin: auto
+		justify-content: space-around
+		flex-flow: row wrap
+		align-items: center
+		.flex-items
+			font-family: Raleway-Regular
+			color: #404040
+			height: 125px
+			width: 25%
+			text-align: center
+			margin-top: 0px
+			.anim
+				&:hover 
+					-webkit-transform: scale(1.05)
+					-ms-transform: scale(1.05)
+					transform: scale(1.05)  
+					opacity: 0.8
+					transition: 0.25s 
+					cursor: pointer
+				i 
+					font-size: 28px
+				p 
+					font-size: 17px
+
+.section-clients
+	width: 100%
+	height: 550px
+	.clients-title-box
+		position: relative
+		text-align: center
+		margin: auto
+		width: 65%
+		.clients-title	
+			width: 70%		
+			display: inline-flex
+			font-family: Raleway-Light
+			&:hover
+					opacity: 0.7
+					transition: 0.25s
+			&::before, &::after
+				content: ' '
+				height: 1.5px
+				width: 100%
+				position: relative
+				background-color: #707070
+				display: inline-block
+				margin-top: auto
+				margin-bottom: auto
+			a 
+				color: #404040			
+				margin-right: 20px
+				margin-left: 20px
+				text-decoration: none
+			p 
+				text-transform: none
+				font-size: 19px
+				font-family: Raleway-Regular
+				color: #404040	
+
+	.clients-flex
+		display: flex
+		width: 100%
+		height: 430px
+		position: relative
+		.flex-container
+			display: flex
+			width: 55%
+			height: 430px
+			margin: auto
+			justify-content: space-around
+			flex-flow: row wrap
+			align-items: center
+			.flex-items
+				font-family: Raleway-Regular
+				color: #404040
+				height: 135px
+				width: 33%
+				text-align: center
+				margin-top: 0px
+				.anim 
+					height: 100% 
+
+					.group
+						background: url(../img/Clients/dist/group.png)
+						width: 100%
+						height: 100%
+						background-repeat: no-repeat
+						background-size: contain
+						&:hover
+							transition: 0.25s
+							background: url(../img/Clients/dist-color/group.png)
+							width: 100%
+							height: 100%
+							background-repeat: no-repeat
+							background-size: contain
+					.planet
+						background: url(../img/Clients/dist/planet.png)
+						width: 100%
+						height: 100%
+						background-repeat: no-repeat
+						background-size: contain
+						&:hover
+							transition: 0.25s
+							background: url(../img/Clients/dist-color/planet.png)
+							width: 100%
+							height: 100%
+							background-repeat: no-repeat
+							background-size: contain
+					.krono
+						background: url(../img/Clients/dist/krono.png)
+						max-width: 100%
+						height: 100%
+						background-repeat: no-repeat
+						background-size: contain
+						&:hover
+							transition: 0.25s
+							background: url(../img/Clients/dist-color/krono.png)
+							width: 100%
+							height: 100%
+							background-repeat: no-repeat
+							background-size: contain
+					.mega
+						background: url(../img/Clients/dist/mega.png)
+						width: 100%
+						height: 100%
+						background-repeat: no-repeat
+						background-size: contain
+						&:hover
+							transition: 0.25s
+							background: url(../img/Clients/dist-color/mega.png)
+							width: 100%
+							height: 100%
+							background-repeat: no-repeat
+							background-size: contain
+					.horse
+						background: url(../img/Clients/dist/horse.png)
+						width: 100%
+						height: 100%
+						background-repeat: no-repeat
+						background-size: contain
+						&:hover
+							transition: 0.25s
+							background: url(../img/Clients/dist-color/horse.png)
+							width: 100%
+							height: 100%
+							background-repeat: no-repeat
+							background-size: contain
+					.salavat
+						background: url(../img/Clients/dist/salavat.png)
+						width: 100%
+						height: 100%
+						background-repeat: no-repeat
+						background-size: contain
+						&:hover
+							transition: 0.25s
+							background: url(../img/Clients/dist-color/salavat.png)
+							width: 100%
+							height: 100%
+							background-repeat: no-repeat
+							background-size: contain
+					.champ
+						background: url(../img/Clients/dist/champ.png)
+						width: 100%
+						height: 100%
+						background-repeat: no-repeat
+						background-size: contain
+						&:hover
+							transition: 0.25s
+							background: url(../img/Clients/dist-color/champ.png)
+							width: 100%
+							height: 100%
+							background-repeat: no-repeat
+							background-size: contain
+					.bash
+						background: url(../img/Clients/dist/bash.png)
+						width: 100%
+						height: 100%
+						background-repeat: no-repeat
+						background-size: contain
+						&:hover
+							transition: 0.25s 
+							background: url(../img/Clients/dist-color/bash.png)
+							width: 100%
+							height: 100%
+							background-repeat: no-repeat
+							background-size: contain
+					.metro
+						background: url(../img/Clients/dist/metro.png)
+						width: 100%
+						height: 100%
+						background-repeat: no-repeat
+						background-size: contain
+						&:hover
+							transition: 0.25s
+							background: url(../img/Clients/dist-color/metro.png)
+							width: 100%
+							height: 100%
+							background-repeat: no-repeat
+							background-size: contain
+				
+.section-scheme
+	width: 100%
+	height: 400px
+	background-color: #131B23
+	.scheme-title-box
+		height: 100px
+		//border: 1px solid red	
+		.scheme-title 
+				margin: auto
+				font-family: Raleway-Light
+				letter-spacing: 1px
+				font-size: 30px
+				line-height: 100px
+				a 
+					text-decoration: none
+					color: white
+					&:hover
+						opacity: 0.7
+						transition: 0.25s
+	
+	.scheme-box
+		width: 100%
+		height: 250px
+		.flex-container
+			width: 80%
+			height: 100%
+			display: flex
+			margin: auto
+			//border: 1px solid green
+			.flex-items
+				width: 34%
+				height: 100%
+				margin-top: 20px
+				//border: 1px solid red
+				.number
+					width: 100%
+					height: 25%
+					color: white
+					font-family: Philosopher
+					text-align: center
+					font-size: 70px		
+					line-height: 60px			
+					//border: 1px solid yellow
+				.desc 	
+					width: 80%
+					height: 65%
+					margin: auto
+					//border: 1px solid blue
+					margin-top: 40px
+					color: white
+					font-family: Raleway-Light
+					text-shadow: 1px 1px 1px black
+					font-size: 16px
+					text-align: center
+					line-height: 20px
+					letter-spacing: 1px
+
+.section-call-back-calc 
+	width: 100%
+	height: 120px
+	background-color: #0E111B
+	color: white
+	.flex-container
+		width: 50%
+		height: 120px
+		margin: auto
+	
+		text-align: center
+		.flex-items
+			margin: auto
+			padding-top: 20px
+			//border: 1px solid blue
+			text-align: center
+			letter-spacing: 1px
+			.desc
+				font-family: Raleway-Light
+				opacity: 0.9
+			.button
+				border: 1px solid white 
+				border-radius: 0.2em
+				background-color: rgba(#707070, 0.5) 
+				height: 35px
+				line-height: 30px
+				
+				margin: auto
+				width: 20%
+				margin-top: 15px
+				a 	
+					opacity: 0.8
+					text-decoration: none
+					color: white
+				&:hover
+					transform: scale(1.02)
+					transition: 0.7s easy
+
+				
+
+
+			
+		
+
+
+
+
+		
+
+
+				
+
+
+	
+
+		
 
 	
 	

@@ -18,11 +18,8 @@ $(function(){
                 },
             },
             {
-                "navbar": {
-                    title: "My Menu"
-                }
             });
-
+        
             var api = menu.API;
 
             api.bind( "open:start", function(){
@@ -32,6 +29,8 @@ $(function(){
                 $('.hamburger').removeClass('is-active');
             } );
 });
+
+ 
 
 
 

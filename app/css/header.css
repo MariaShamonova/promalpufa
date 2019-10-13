@@ -1,7 +1,6 @@
 .main-head {
   display: inline-block;
-  min-height: 710px;
-  height: 100vh;
+  height: 700px;
   width: 100%;
   background-repeat: no-repeat;
   position: relative;
@@ -19,7 +18,8 @@
       .main-head .top-line .row .top-line-left {
         display: inline-block; }
         .main-head .top-line .row .top-line-left .logo {
-          float: left; }
+          float: left;
+          line-height: 100px; }
           .main-head .top-line .row .top-line-left .logo img {
             margin-right: 0px;
             position: relative;
@@ -37,15 +37,14 @@
         margin-right: 0px;
         text-align: right;
         left: -55px; }
-
-.top-line-right .number_phone {
-  position: relative;
-  font-family: Philosopher-Italic;
-  white-space: nowrap; }
-  .top-line-right .number_phone .fas {
-    margin-right: 5px;
-    font-size: 14px;
-    opacity: 0.8; }
+        .main-head .top-line .row .top-line-right .number_phone {
+          position: relative;
+          font-family: Philosopher-Italic;
+          white-space: nowrap; }
+          .main-head .top-line .row .top-line-right .number_phone .fas {
+            margin-right: 5px;
+            font-size: 14px;
+            opacity: 0.8; }
 
 .header-social {
   position: absolute;
